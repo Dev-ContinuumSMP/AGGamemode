@@ -1,5 +1,8 @@
 # AGGamemode
 
+<img width="1254" height="1254" alt="logo" src="https://github.com/user-attachments/assets/37439bc4-b8e2-4074-8c53-e36de204636f" />
+
+
 [![Java 21](https://img.shields.io/badge/Java-21-2ea043)](https://adoptium.net/)
 [![Paper 1.20.6+](https://img.shields.io/badge/Paper-1.20.6%2B-0094ff)](https://papermc.io/)
 [![Folia Supported](https://img.shields.io/badge/Folia-Supported-7c3aed)](https://papermc.io/software/folia)
