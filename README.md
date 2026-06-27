@@ -1,4 +1,5 @@
 # AGGamemode
+<img width="1254" height="1254" alt="logo" src="https://github.com/user-attachments/assets/55fb6e9e-4c56-47cd-829c-1fe4186f73ee" />
 
 AGGamemode is a Paper/Folia Minecraft plugin that adds a structured gamemode progression system with AG-styled menus, commands, and persistent player state. Players can choose between Traveler, Ironman, and Hardcore, while the plugin enforces restricted command access, trade rules, and group-based progression.
 
