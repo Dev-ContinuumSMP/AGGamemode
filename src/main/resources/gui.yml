@@ -1,0 +1,46 @@
+menu:
+  title: "&8[&9AG&8] &7Select Your Mode"
+  size: 27
+  filler:
+    enabled: true
+    material: BLUE_STAINED_GLASS_PANE
+    name: "&7"
+    lore: []
+    slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+
+modes:
+  traveler:
+    slot: 11
+    material: COMPASS
+    name: "&bTraveler"
+    lore:
+      - "&7Balanced playstyle with no restrictions."
+      - "&7Trading and shops are enabled."
+      - "&8Symbol: &7%symbol%"
+    agauctions-nbt:
+      mode: "traveler"
+      ui_source: "aggamemode"
+
+  ironman:
+    slot: 13
+    material: IRON_INGOT
+    name: "&7Ironman"
+    lore:
+      - "&7No player-to-player trading."
+      - "&7No shop and auction commands."
+      - "&8Symbol: &7%symbol%"
+    agauctions-nbt:
+      mode: "ironman"
+      ui_source: "aggamemode"
+
+  hardcore:
+    slot: 15
+    material: NETHERITE_SWORD
+    name: "&3Hardcore"
+    lore:
+      - "&7Ironman restrictions plus"
+      - "&7permanent death consequences."
+      - "&8Symbol: &7%symbol%"
+    agauctions-nbt:
+      mode: "hardcore"
+      ui_source: "aggamemode"

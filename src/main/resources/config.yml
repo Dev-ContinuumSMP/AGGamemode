@@ -1,0 +1,59 @@
+symbols:
+  traveler: ""
+  ironman: "&7[&fI&7]"
+  hardcore: "&4[&cHC&4]"
+
+blocked-commands:
+  - trade
+  - shop
+  - ah
+  - orders
+  - buyorder
+  - buyorders
+  - auctionhouse
+
+restrictions:
+  prevent-item-drop: true
+  prevent-pickup-from-players: true
+
+trade:
+  auto-rewrite-direct-command: true
+  request-subcommand: request
+  active-session-seconds: 120
+
+groups:
+  enabled: true
+  iron-group: iron
+  hardcore-group: hardcore
+  sync-commands:
+    - "lp user %player% parent remove %iron_group%"
+    - "lp user %player% parent remove %hardcore_group%"
+    - "lp user %player% parent add %target_group%"
+
+hardcore:
+  death-action: BAN
+  ban-message: "Hardcore death is permanent."
+  temp-ban-days: 3
+  temp-ban-message: "You died in Hardcore and are banned for %days% days."
+  demote-mode: IRONMAN
+
+messages:
+  prefix: "&6AGGamemode &8| &7"
+  current-mode: "Your mode is: &e%mode%"
+  set-self: "Your mode is now: &e%mode%"
+  set-other: "Set &e%player% &7mode to: &e%mode%"
+  cannot-use-command: "You cannot use this command as %mode%."
+  cannot-use-shop: "You cannot use shops as %mode%."
+  cannot-trade-outside-group: "You can only trade with players in your same trade group (%mode%)."
+  cannot-drop-items: "You cannot drop items as %mode%."
+  cannot-pickup-player-drop: "You cannot pick up items dropped by other players as %mode%."
+  trade-group-joined: "You joined %player%'s trade group: &b%group%&7."
+  trade-group-member-joined: "&e%player% &7joined your trade group: &b%group%&7."
+  trade-group-request-sent: "&7Join request sent to &e%player%&7."
+  trade-group-request-received: "&e%player% &7wants to join your group."
+  trade-group-request-accepted: "&aAccepted join request from &e%player%&a."
+  trade-group-request-declined: "&cYour join request was declined by &e%player%&c."
+  hardcore-death-ban: "&cHardcore death is permanent."
+  hardcore-death-announcement: "&c%player% &7died in Hardcore. Killer: &f%killer%&7."
+  hardcore-choice-opened: "&7Choose your penalty: downgrade or temporary ban."
+  hardcore-demoted: "&cYou died as Hardcore and were demoted to %mode%."

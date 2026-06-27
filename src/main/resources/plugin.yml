@@ -1,0 +1,25 @@
+name: AGGamemode
+version: 1.0.0
+main: dev.ag.gamemode.AGGamemodePlugin
+api-version: '1.20'
+authors: [AG]
+folia-supported: true
+libraries:
+  - com.h2database:h2:2.2.224
+
+commands:
+  aggamemode:
+    description: Manage AG gamemodes.
+    aliases: [agg]
+    usage: /agg <traveler|ironman|hardcore>, /agg set <player> <mode>, /agg group (opens GUI)
+  trade:
+    description: AG trade request command with group enforcement.
+    usage: /trade <player> | /trade request <player> | /trade accept [player] | /trade decline [player] | /trade cancel
+
+permissions:
+  aggamemode.self:
+    description: Allows setting your own gamemode.
+    default: true
+  aggamemode.admin:
+    description: Allows setting other player gamemodes.
+    default: op
